@@ -1,44 +1,45 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/keedesk-logo-dark.png">
-    <img src="docs/images/keedesk-logo-light.png" alt="KeeDesk — remote desktop for Mac by EGEROBOT" width="420">
+    <img src="docs/images/keedesk-logo-light.png" alt="KeeDesk — secure remote desktop for Mac and Windows by EGEROBOT" width="420">
   </picture>
 </p>
 
-<h1 align="center">KeeDesk — secure remote desktop for Mac</h1>
+<h1 align="center">KeeDesk — secure remote desktop for Mac and Windows</h1>
 
 <p align="center">
-  Reach your Mac from another computer, or help someone on theirs. End-to-end encrypted, and nothing starts until the person at the screen says yes.
+  Reach your computer from another one, or help someone on theirs. End-to-end encrypted, and nothing starts until the person at the screen says yes.
 </p>
 
 <p align="center">
   <img alt="Status" src="https://img.shields.io/badge/status-in%20development-844D3E">
-  <img alt="Platform" src="https://img.shields.io/badge/platform-macOS%2013%2B-33160F">
+  <img alt="Platforms" src="https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-33160F">
   <img alt="Encryption" src="https://img.shields.io/badge/encryption-end--to--end-00696F">
   <a href="README.tr.md"><img alt="Türkçe" src="https://img.shields.io/badge/dil-T%C3%BCrk%C3%A7e-844D3E"></a>
 </p>
 
 ---
 
-> **KeeDesk is in development.** The Mac app runs today between our own Macs; the first public release will be published on this page. Select **Watch → Custom → Releases** above to be notified.
+> **KeeDesk is in development.** KeeDesk is built natively for each system — Swift on the Mac, WinUI on Windows — and every version speaks the same encrypted protocol, so a Mac and a Windows PC connect to each other. The Mac app comes first and already runs between our own Macs; the first public release will be published on this page. Select **Watch → Custom → Releases** above to be notified.
 
 This repository is the **official download channel for KeeDesk on GitHub**. It holds release files only — no source code. Every release will carry a Developer ID signed, Apple-notarized installer and a `SHA256SUMS` file.
 
-<img src="docs/images/welcome-en.jpg" alt="KeeDesk welcome screen on macOS: reach a Mac or help someone on theirs, end-to-end encrypted" width="100%">
+<img src="docs/images/welcome-en.jpg" alt="KeeDesk welcome screen: reach your computer or help someone on theirs, end-to-end encrypted" width="100%">
 
 ## Availability
 
 | Platform | Status |
 |---|---|
 | **macOS 13 or later** (Apple silicon and Intel) | In development — first release will appear here |
-| **Windows and Linux** | Planned, after the Mac app |
-| **iOS and Android** | Planned, after the Mac app; development has not started yet |
+| **Windows 10 and 11** (native WinUI app) | Next, after the Mac app |
+| **Linux** | Planned |
+| **iOS and Android** | Planned, after the desktop apps; development has not started yet |
 
 ## What KeeDesk does
 
 ### Connect with a 9-digit ID
 
-Every Mac gets a **KeeDesk ID** derived from its own key pair, so no server can invent or reassign it. Type the other side's ID and press Connect. KeeDesk also finds other KeeDesk devices **on the same network**, keeps your **recent sessions**, and lets you rename them.
+Every computer gets a **KeeDesk ID** derived from its own key pair, so no server can invent or reassign it. Type the other side's ID and press Connect. KeeDesk also finds other KeeDesk devices **on the same network**, keeps your **recent sessions**, and lets you rename them.
 
 ### Nothing starts without your yes
 
@@ -46,7 +47,7 @@ Every Mac gets a **KeeDesk ID** derived from its own key pair, so no server can 
 
 - An **accept window** shows who is asking; you choose what they may do and can change it during the session.
 - **Turn off incoming connections** in one switch, or let in **only people who know the password**.
-- **Unattended access** for your own Macs, with **two-factor authentication (TOTP)**, an **allow list** of IDs and **permission profiles** (view only, full access, unattended or your own).
+- **Unattended access** for your own computers, with **two-factor authentication (TOTP)**, an **allow list** of IDs and **permission profiles** (view only, full access, unattended or your own).
 - A **one-time invitation code** that works once and expires in two hours.
 - A **coloured frame** around your screen while someone is connected, an optional **screen lock when the session ends**, and a **connection history**.
 
@@ -57,17 +58,17 @@ Every Mac gets a **KeeDesk ID** derived from its own key pair, so no server can 
 - Passwords are stored only as a **salted PBKDF2-SHA256 hash** (310,000 rounds), compared in constant time, with growing wait times after wrong attempts and a **request-flood guard**.
 - When a session is recorded, the other side is **always told**.
 
-### Plain-language macOS permissions
+### Plain-language permissions
 
 <img src="docs/images/permissions-en.jpg" alt="KeeDesk system permissions: Screen Recording, Accessibility and Full Disk Access, each explained" width="100%">
 
-KeeDesk shows the three permissions macOS asks for — Screen Recording, Accessibility and Full Disk Access — says what each one is for, and lets you check or reset them in one place.
+On the Mac, KeeDesk shows the three permissions macOS asks for — Screen Recording, Accessibility and Full Disk Access — says what each one is for, and lets you check or reset them in one place.
 
 ### Fast, sharp picture
 
 <img src="docs/images/picture-en.jpg" alt="KeeDesk session settings: resolution, frame rate and bit rate limits" width="100%">
 
-- **ScreenCaptureKit** capture that leaves KeeDesk's own windows out, **VideoToolbox HEVC or H.264** hardware encoding and decoding.
+- Hardware **HEVC or H.264** encoding and decoding; on the Mac through ScreenCaptureKit capture (KeeDesk's own windows left out) and VideoToolbox.
 - Adaptive quality (speed · balanced · best), and per-session limits for **resolution, frame rate and bit rate**.
 - Multiple monitors, a separate **remote cursor** channel, original or fit-to-window view.
 
@@ -87,7 +88,7 @@ KeeDesk shows the three permissions macOS asks for — Screen Recording, Accessi
 
 - Connections over the internet through our rendezvous and relay server, then direct UDP (QUIC) with NAT traversal and error correction.
 - KeeDesk accounts, plans and signed automatic updates.
-- Windows and Linux apps; then iOS and Android.
+- The Windows app (native WinUI, same protocol — Mac and Windows connect both ways); Linux; then iOS and Android.
 - 41 interface languages (English and Turkish today).
 - Business: your own rendezvous server, mass deployment, single sign-on and branding.
 
@@ -98,4 +99,4 @@ See [SECURITY.md](SECURITY.md).
 ---
 
 <sub>KeeDesk is a product of **EGEROBOT** (EGEROBOT OTOMASYON MÜHENDİSLİK PROJE DANIŞMANLIK SAN. VE TİC. LTD. ŞTİ.), İzmir, Türkiye. KeeDesk is proprietary software; see [LICENSE](LICENSE).<br>
-Keywords: remote desktop, remote desktop for Mac, macOS remote access, remote support, remote control, screen sharing, unattended access, end-to-end encrypted remote desktop, remote desktop app, uzak masaüstü, uzaktan bağlantı, uzaktan destek, ekran paylaşımı, KeeDesk.</sub>
+Keywords: remote desktop, remote desktop for Mac, remote desktop for Windows, Mac to Windows remote desktop, macOS remote access, Windows remote access, Linux remote desktop, remote support, remote control, screen sharing, unattended access, end-to-end encrypted remote desktop, remote desktop app, uzak masaüstü, uzaktan bağlantı, uzaktan destek, ekran paylaşımı, KeeDesk.</sub>
