@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="Durum" src="https://img.shields.io/badge/durum-geli%C5%9Ftiriliyor-844D3E">
+  <img alt="macOS indirilebilir" src="https://img.shields.io/badge/macOS-indirilebilir-00696F">
   <img alt="Platformlar" src="https://img.shields.io/badge/platformlar-macOS%20%7C%20Windows%20%7C%20Linux-33160F">
   <img alt="Şifreleme" src="https://img.shields.io/badge/%C5%9Fifreleme-u%C3%A7tan%20uca-00696F">
   <a href="README.md"><img alt="English" src="https://img.shields.io/badge/language-English-844D3E"></a>
@@ -22,7 +22,7 @@
 
 > **Mac için KeeDesk indirilebilir.** En son sürümü [Releases](https://github.com/egerobot/keedesk-releases/releases/latest) sayfasından ya da [keedesk.com](https://keedesk.com/tr/download.html) adresinden indirin. KeeDesk her sistem için kendi diliyle yazılıyor — Mac'te Swift, Windows'ta WinUI — ve hepsi aynı şifreli protokolü konuşur; Mac ile Windows bilgisayar birbirine bağlanır. Yeni sürümlerden haber almak için yukarıdan **Watch → Custom → Releases** seçin.
 
-Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm dosyaları bulunur, kaynak kod yoktur. Her sürümde Developer ID ile imzalı, Apple onaylı (notarize) kurulum dosyası ve `SHA256SUMS` dosyası bulunur.
+Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm dosyaları bulunur, kaynak kod yoktur. Her macOS sürümünde Developer ID ile imzalı, Apple onaylı (notarize) kurulum dosyası, her sürümde de `SHA256SUMS` dosyası bulunur.
 
 <img src="docs/images/welcome-tr.jpg" alt="KeeDesk karşılama ekranı: bilgisayarınıza ulaşın ya da uzaktan yardım edin, uçtan uca şifreli" width="100%">
 
@@ -33,7 +33,7 @@ Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm d
 | **macOS 14 ve sonrası** (Apple çipli ve Intel) | İndirilebilir — [indir](https://github.com/egerobot/keedesk-releases/releases/latest/download/KeeDesk.dmg) |
 | **Windows 10 ve 11** (yerel WinUI uygulaması, x64 ve ARM64) | Yakında Microsoft Store'da |
 | **Linux** | Planlandı |
-| **iOS ve Android** | Planlandı, masaüstü uygulamalarından sonra; geliştirmesine henüz başlanmadı |
+| **iOS, iPadOS ve Android** | Planlandı, masaüstü uygulamalarından sonra; geliştirmesine henüz başlanmadı |
 
 ## KeeDesk neler yapar
 
