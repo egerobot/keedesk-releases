@@ -20,9 +20,9 @@
 
 ---
 
-> **KeeDesk geliştiriliyor.** KeeDesk her sistem için kendi diliyle yazılıyor — Mac'te Swift, Windows'ta WinUI — ve hepsi aynı şifreli protokolü konuşur; Mac ile Windows bilgisayar birbirine bağlanır. Önce Mac uygulaması geliyor ve bugün kendi Mac'lerimiz arasında çalışıyor; ilk genel sürüm bu sayfada yayınlanacak. Haber almak için yukarıdan **Watch → Custom → Releases** seçin.
+> **Mac için KeeDesk indirilebilir.** En son sürümü [Releases](https://github.com/egerobot/keedesk-releases/releases/latest) sayfasından ya da [keedesk.com](https://keedesk.com/tr/download.html) adresinden indirin. KeeDesk her sistem için kendi diliyle yazılıyor — Mac'te Swift, Windows'ta WinUI — ve hepsi aynı şifreli protokolü konuşur; Mac ile Windows bilgisayar birbirine bağlanır. Yeni sürümlerden haber almak için yukarıdan **Watch → Custom → Releases** seçin.
 
-Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm dosyaları bulunur, kaynak kod yoktur. Her sürümde Developer ID ile imzalı, Apple onaylı (notarize) kurulum dosyası ve `SHA256SUMS` dosyası olacak.
+Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm dosyaları bulunur, kaynak kod yoktur. Her sürümde Developer ID ile imzalı, Apple onaylı (notarize) kurulum dosyası ve `SHA256SUMS` dosyası bulunur.
 
 <img src="docs/images/welcome-tr.jpg" alt="KeeDesk karşılama ekranı: bilgisayarınıza ulaşın ya da uzaktan yardım edin, uçtan uca şifreli" width="100%">
 
@@ -30,8 +30,8 @@ Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm d
 
 | Platform | Durum |
 |---|---|
-| **macOS 13 ve sonrası** (Apple çipli ve Intel) | Geliştiriliyor — ilk sürüm burada yayınlanacak |
-| **Windows 10 ve 11** (yerel WinUI uygulaması) | Sırada, Mac uygulamasından sonra |
+| **macOS 14 ve sonrası** (Apple çipli ve Intel) | İndirilebilir — [indir](https://github.com/egerobot/keedesk-releases/releases/latest/download/KeeDesk.dmg) |
+| **Windows 10 ve 11** (yerel WinUI uygulaması, x64 ve ARM64) | Yakında Microsoft Store'da |
 | **Linux** | Planlandı |
 | **iOS ve Android** | Planlandı, masaüstü uygulamalarından sonra; geliştirmesine henüz başlanmadı |
 
@@ -81,15 +81,14 @@ Mac'te KeeDesk, macOS'un istediği üç izni — Ekran Kaydı, Erişilebilirlik 
 - Otomatik yeniden bağlanmalı **uzaktan yeniden başlatma**, **sistem bilgisi**, **TCP tüneli**, **Wake-on-LAN**.
 - **Destek kuyruğu**: kişiler ID'nizle yardım ister, siz sırayla alırsınız.
 - **Linkle bağlanma** — `keedesk://` linki oturum değil, soru açar.
+- **41 arayüz dili**; Ayarlar'dan yeniden başlatmadan değişir, sağdan sola yazılan dillerde pencere aynalanır.
 
 <img src="docs/images/link-tr.jpg" alt="KeeDesk linkle bağlanma penceresi: Bağlan'a basmadan hiçbir şey olmaz" width="100%">
 
 ## Yol haritası
 
-- Buluşma ve röle sunucumuz üzerinden internet bağlantısı; ardından NAT delme ve hata düzeltmeli doğrudan UDP (QUIC).
-- KeeDesk hesabı, planlar ve imzalı otomatik güncelleme.
-- Windows uygulaması (yerel WinUI, aynı protokol — Mac ve Windows iki yönlü bağlanır); Linux; ardından iOS ve Android.
-- 41 arayüz dili (bugün İngilizce ve Türkçe).
+- Microsoft Store'da Windows.
+- Linux; ardından iOS, iPadOS ve Android.
 - Kurumsal: kendi buluşma sunucunuz, toplu kurulum, tek oturum açma ve markalama.
 
 ## Güvenlik bildirimi

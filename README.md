@@ -20,9 +20,9 @@
 
 ---
 
-> **KeeDesk is in development.** KeeDesk is built natively for each system — Swift on the Mac, WinUI on Windows — and every version speaks the same encrypted protocol, so a Mac and a Windows PC connect to each other. The Mac app comes first and already runs between our own Macs; the first public release will be published on this page. Select **Watch → Custom → Releases** above to be notified.
+> **KeeDesk for Mac is available.** Download the latest version from [Releases](https://github.com/egerobot/keedesk-releases/releases/latest) or from [keedesk.com](https://keedesk.com/en/download.html). KeeDesk is built natively for each system — Swift on the Mac, WinUI on Windows — and every version speaks the same encrypted protocol, so a Mac and a Windows PC connect to each other. Select **Watch → Custom → Releases** above to be notified of new versions.
 
-This repository is the **official download channel for KeeDesk on GitHub**. It holds release files only — no source code. Every release will carry a Developer ID signed, Apple-notarized installer and a `SHA256SUMS` file.
+This repository is the **official download channel for KeeDesk on GitHub**. It holds release files only — no source code. Every release carries a Developer ID signed, Apple-notarized installer and a `SHA256SUMS` file.
 
 <img src="docs/images/welcome-en.jpg" alt="KeeDesk welcome screen: reach your computer or help someone on theirs, end-to-end encrypted" width="100%">
 
@@ -30,8 +30,8 @@ This repository is the **official download channel for KeeDesk on GitHub**. It h
 
 | Platform | Status |
 |---|---|
-| **macOS 13 or later** (Apple silicon and Intel) | In development — first release will appear here |
-| **Windows 10 and 11** (native WinUI app) | Next, after the Mac app |
+| **macOS 14 or later** (Apple silicon and Intel) | Available — [download](https://github.com/egerobot/keedesk-releases/releases/latest/download/KeeDesk.dmg) |
+| **Windows 10 and 11** (native WinUI app, x64 and ARM64) | Coming to the Microsoft Store |
 | **Linux** | Planned |
 | **iOS and Android** | Planned, after the desktop apps; development has not started yet |
 
@@ -81,15 +81,14 @@ On the Mac, KeeDesk shows the three permissions macOS asks for — Screen Record
 - **Remote restart** with automatic reconnect, **system information**, **TCP tunnel**, **Wake-on-LAN**.
 - A **support queue**: people ask for help with your ID and you take them one by one.
 - **Connect from a link** — a `keedesk://` link opens a question, never a session.
+- **41 interface languages**, switched in Settings without restarting; right-to-left languages mirror the window.
 
 <img src="docs/images/link-en.jpg" alt="KeeDesk connect-from-a-link window: nothing happens until you click Connect" width="100%">
 
 ## Roadmap
 
-- Connections over the internet through our rendezvous and relay server, then direct UDP (QUIC) with NAT traversal and error correction.
-- KeeDesk accounts, plans and signed automatic updates.
-- The Windows app (native WinUI, same protocol — Mac and Windows connect both ways); Linux; then iOS and Android.
-- 41 interface languages (English and Turkish today).
+- Windows on the Microsoft Store.
+- Linux; then iOS, iPadOS and Android.
 - Business: your own rendezvous server, mass deployment, single sign-on and branding.
 
 ## Security reports
