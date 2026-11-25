@@ -13,7 +13,7 @@
 
 <p align="center">
   <img alt="macOS available" src="https://img.shields.io/badge/macOS-available-00696F">
-  <img alt="Platforms" src="https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-33160F">
+  <img alt="Windows coming" src="https://img.shields.io/badge/Windows-coming-33160F">
   <img alt="Encryption" src="https://img.shields.io/badge/encryption-end--to--end-00696F">
   <a href="README.tr.md"><img alt="Türkçe" src="https://img.shields.io/badge/dil-T%C3%BCrk%C3%A7e-844D3E"></a>
 </p>
@@ -62,26 +62,26 @@ Every computer gets a **KeeDesk ID** derived from its own key pair, so no server
 
 <img src="docs/images/permissions-en.jpg" alt="KeeDesk system permissions: Screen Recording, Accessibility and Full Disk Access, each explained" width="100%">
 
-On the Mac, KeeDesk shows the three permissions macOS asks for — Screen Recording, Accessibility and Full Disk Access — says what each one is for, and lets you check or reset them in one place.
+On the Mac, KeeDesk shows the three permissions macOS asks for — Screen Recording, Accessibility and Full Disk Access — says what each one is for, and lets you check, request or fix them in one place.
 
 ### Fast, sharp picture
 
 <img src="docs/images/picture-en.jpg" alt="KeeDesk session settings: resolution, frame rate and bit rate limits" width="100%">
 
-- Hardware **HEVC or H.264** encoding and decoding; on the Mac through ScreenCaptureKit capture (KeeDesk's own windows left out) and VideoToolbox.
-- Adaptive quality (speed · balanced · best), and per-session limits for **resolution, frame rate and bit rate**.
+- Hardware **HEVC or H.264** encoding and decoding; on the Mac through ScreenCaptureKit capture (KeeDesk's frame, privacy curtain and camera window left out) and VideoToolbox.
+- Quality presets (speed · balanced · best), and per-session limits for **resolution, frame rate and bit rate**.
 - Multiple monitors, a separate **remote cursor** channel, original or fit-to-window view.
 
 ### Everything a session needs
 
-- **Mouse and keyboard** control with Unicode typing and shortcut forwarding (⌘-Tab and others); stuck modifier keys are cleared when a session ends.
+- **Mouse and keyboard** control with Unicode typing and shortcut forwarding (⌘-Tab stays on your Mac); stuck modifier keys are cleared when a session ends.
 - **Clipboard sync** for text and images, **file transfer** with a two-pane file manager, **drag a file onto the remote screen** to send it or drag a remote file to Finder to receive it.
 - **Chat**, **system sound**, **two-way voice** with microphone choice and test.
 - **Screenshots** on the viewing side, **session recording**, **whiteboard**, **privacy mode** (blank the remote screen), **block local input**.
 - **Remote restart** with automatic reconnect, **system information**, **TCP tunnel**, **Wake-on-LAN**.
 - A **support queue**: people ask for help with your ID and you take them one by one.
 - **Connect from a link** — a `keedesk://` link opens a question, never a session.
-- **41 interface languages**, switched in Settings without restarting; right-to-left languages mirror the window.
+- **41 interface languages**, changed in Settings: windows switch at once, the menu bar at the next launch; right-to-left languages mirror the window.
 
 <img src="docs/images/link-en.jpg" alt="KeeDesk connect-from-a-link window: nothing happens until you click Connect" width="100%">
 

@@ -14,4 +14,6 @@ Only install KeeDesk from the Releases of this repository or from EGEROBOT's own
 
 # Güvenlik
 
-KeeDesk'teki güvenlik açıklarını lütfen **info@keedesk.com** adresine "KeeDesk güvenlik" konusuyla, gizli olarak bildirin; açık için herkese açık GitHub kaydı açmayın. KeeDesk sürümünü, işletim sisteminizi ve sürümünü, adımları yazın. Kurulum dosyalarını yalnız bu deponun sürümlerinden ya da EGEROBOT'un kendi sayfalarından indirin ve `SHA256SUMS` ile doğrulayın.
+KeeDesk'teki güvenlik açıklarını lütfen **info@keedesk.com** adresine "KeeDesk güvenlik" konusuyla, gizli olarak bildirin; açık için herkese açık GitHub kaydı açmayın. KeeDesk sürümünü, işletim sisteminizi ve sürümünü, sorunu yeniden üretme adımlarını yazın. Bildirimleri aldığımızı yanıtlar, sorun çözülene kadar sizi bilgilendiririz.
+
+Kurulum dosyalarını yalnız bu deponun sürümlerinden ya da EGEROBOT'un kendi sayfalarından indirin ve her dosyayı sürümündeki `SHA256SUMS` dosyasıyla doğrulayın. macOS sürümleri Developer ID: EGEROBOT OTOMASYON MUHENDISLIK PROJE DANISMANLIK SANAYI VE TICARET LIMITED SIRKETI (9S8KV52JV4) ile imzalı ve Apple noter onaylıdır.

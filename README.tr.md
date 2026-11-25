@@ -13,24 +13,24 @@
 
 <p align="center">
   <img alt="macOS indirilebilir" src="https://img.shields.io/badge/macOS-indirilebilir-00696F">
-  <img alt="Platformlar" src="https://img.shields.io/badge/platformlar-macOS%20%7C%20Windows%20%7C%20Linux-33160F">
+  <img alt="Windows yakında" src="https://img.shields.io/badge/Windows-yak%C4%B1nda-33160F">
   <img alt="Şifreleme" src="https://img.shields.io/badge/%C5%9Fifreleme-u%C3%A7tan%20uca-00696F">
   <a href="README.md"><img alt="English" src="https://img.shields.io/badge/language-English-844D3E"></a>
 </p>
 
 ---
 
-> **Mac için KeeDesk indirilebilir.** En son sürümü [Releases](https://github.com/egerobot/keedesk-releases/releases/latest) sayfasından ya da [keedesk.com](https://keedesk.com/tr/download.html) adresinden indirin. KeeDesk her sistem için kendi diliyle yazılıyor — Mac'te Swift, Windows'ta WinUI — ve hepsi aynı şifreli protokolü konuşur; Mac ile Windows bilgisayar birbirine bağlanır. Yeni sürümlerden haber almak için yukarıdan **Watch → Custom → Releases** seçin.
+> **Mac için KeeDesk indirilebilir.** En son sürümü [Releases](https://github.com/egerobot/keedesk-releases/releases/latest) sayfasından ya da [keedesk.com](https://keedesk.com/tr/download.html) adresinden indirin. KeeDesk her sistem için yerel olarak yazılır — Mac'te Swift, Windows'ta C# ve WinUI ile — ve hepsi aynı şifreli protokolü konuşur; Mac ile Windows bilgisayar birbirine bağlanır. Yeni sürümlerden haber almak için yukarıdan **Watch → Custom → Releases** seçin.
 
 Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm dosyaları bulunur, kaynak kod yoktur. Her macOS sürümünde Developer ID ile imzalı, Apple onaylı (notarize) kurulum dosyası, her sürümde de `SHA256SUMS` dosyası bulunur.
 
 <img src="docs/images/welcome-tr.jpg" alt="KeeDesk karşılama ekranı: bilgisayarınıza ulaşın ya da uzaktan yardım edin, uçtan uca şifreli" width="100%">
 
-## Platformlar
+## Durum
 
 | Platform | Durum |
 |---|---|
-| **macOS 14 ve sonrası** (Apple çipli ve Intel) | İndirilebilir — [indir](https://github.com/egerobot/keedesk-releases/releases/latest/download/KeeDesk.dmg) |
+| **macOS 14 ve sonrası** (Apple silicon ve Intel) | İndirilebilir — [indir](https://github.com/egerobot/keedesk-releases/releases/latest/download/KeeDesk.dmg) |
 | **Windows 10 ve 11** (yerel WinUI uygulaması, x64 ve ARM64) | Yakında Microsoft Store'da |
 | **Linux** | Planlandı |
 | **iOS, iPadOS ve Android** | Planlandı, masaüstü uygulamalarından sonra; geliştirmesine henüz başlanmadı |
@@ -62,26 +62,26 @@ Her bilgisayar kendi anahtar çiftinden türeyen bir **KeeDesk ID** alır; hiçb
 
 <img src="docs/images/permissions-tr.jpg" alt="KeeDesk sistem izinleri: Ekran Kaydı, Erişilebilirlik ve Tam Disk Erişimi, her biri açıklamasıyla" width="100%">
 
-Mac'te KeeDesk, macOS'un istediği üç izni — Ekran Kaydı, Erişilebilirlik ve Tam Disk Erişimi — gösterir, her birinin ne için gerektiğini söyler ve hepsini tek yerden denetleyip sıfırlamanızı sağlar.
+Mac'te KeeDesk, macOS'un istediği üç izni — Ekran Kaydı, Erişilebilirlik ve Tam Disk Erişimi — gösterir, her birinin ne için gerektiğini söyler ve hepsini tek yerden denetleyip istemenizi ya da düzeltmenizi sağlar.
 
 ### Hızlı ve net görüntü
 
 <img src="docs/images/picture-tr.jpg" alt="KeeDesk oturum ayarları: çözünürlük, kare hızı ve bit hızı sınırları" width="100%">
 
-- Donanımla **HEVC ya da H.264** kodlama ve çözme; Mac'te KeeDesk'in kendi pencerelerini dışarıda bırakan ScreenCaptureKit yakalama ve VideoToolbox ile.
-- Uyarlanır kalite (hız · denge · en iyi) ve oturum başına **çözünürlük, kare hızı ve bit hızı** sınırı.
+- Donanımla **HEVC ya da H.264** kodlama ve çözme; Mac'te KeeDesk'in çerçevesini, gizlilik perdesini ve kamera penceresini dışarıda bırakan ScreenCaptureKit yakalama ve VideoToolbox ile.
+- Kalite seçimi (hız · denge · en iyi) ve oturum başına **çözünürlük, kare hızı ve bit hızı** sınırı.
 - Çoklu monitör, ayrı **uzak imleç** kanalı, orijinal ya da pencereye sığdır görünüm.
 
 ### Bir oturumun ihtiyacı olan her şey
 
-- Unicode yazma ve kısayol iletimiyle (⌘-Tab ve diğerleri) **fare ve klavye** kontrolü; oturum bitince takılı kalan değiştirici tuşlar temizlenir.
+- Unicode yazma ve kısayol iletimiyle (⌘-Tab sizin Mac'inizde kalır) **fare ve klavye** kontrolü; oturum bitince takılı kalan değiştirici tuşlar temizlenir.
 - Metin ve görsel için **pano eşitleme**, iki panelli dosya yöneticisiyle **dosya aktarımı**; göndermek için **dosyayı uzak ekranın üstüne bırakın**, almak için uzak dosyayı Finder'a sürükleyin.
 - **Sohbet**, **sistem sesi**, mikrofon seçimi ve testiyle **iki yönlü konuşma**.
 - İzleyen tarafta **ekran görüntüsü**, **oturum kaydı**, **beyaz tahta**, **gizlilik kipi** (uzak ekranı karart), **yerel girdiyi kilitle**.
 - Otomatik yeniden bağlanmalı **uzaktan yeniden başlatma**, **sistem bilgisi**, **TCP tüneli**, **Wake-on-LAN**.
 - **Destek kuyruğu**: kişiler ID'nizle yardım ister, siz sırayla alırsınız.
 - **Linkle bağlanma** — `keedesk://` linki oturum değil, soru açar.
-- **41 arayüz dili**; Ayarlar'dan yeniden başlatmadan değişir, sağdan sola yazılan dillerde pencere aynalanır.
+- **41 arayüz dili**; Ayarlar'dan değişir: pencereler anında, menü çubuğu bir sonraki açılışta değişir; sağdan sola yazılan dillerde pencere aynalanır.
 
 <img src="docs/images/link-tr.jpg" alt="KeeDesk linkle bağlanma penceresi: Bağlan'a basmadan hiçbir şey olmaz" width="100%">
 
