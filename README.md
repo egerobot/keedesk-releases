@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="Status" src="https://img.shields.io/badge/status-in%20development-844D3E">
+  <img alt="macOS available" src="https://img.shields.io/badge/macOS-available-00696F">
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-33160F">
   <img alt="Encryption" src="https://img.shields.io/badge/encryption-end--to--end-00696F">
   <a href="README.tr.md"><img alt="Türkçe" src="https://img.shields.io/badge/dil-T%C3%BCrk%C3%A7e-844D3E"></a>
@@ -22,7 +22,7 @@
 
 > **KeeDesk for Mac is available.** Download the latest version from [Releases](https://github.com/egerobot/keedesk-releases/releases/latest) or from [keedesk.com](https://keedesk.com/en/download.html). KeeDesk is built natively for each system — Swift on the Mac, WinUI on Windows — and every version speaks the same encrypted protocol, so a Mac and a Windows PC connect to each other. Select **Watch → Custom → Releases** above to be notified of new versions.
 
-This repository is the **official download channel for KeeDesk on GitHub**. It holds release files only — no source code. Every release carries a Developer ID signed, Apple-notarized installer and a `SHA256SUMS` file.
+This repository is the **official download channel for KeeDesk on GitHub**. It holds release files only — no source code. Every macOS release carries a Developer ID signed, Apple-notarized installer, and every release carries a `SHA256SUMS` file.
 
 <img src="docs/images/welcome-en.jpg" alt="KeeDesk welcome screen: reach your computer or help someone on theirs, end-to-end encrypted" width="100%">
 
@@ -33,7 +33,7 @@ This repository is the **official download channel for KeeDesk on GitHub**. It h
 | **macOS 14 or later** (Apple silicon and Intel) | Available — [download](https://github.com/egerobot/keedesk-releases/releases/latest/download/KeeDesk.dmg) |
 | **Windows 10 and 11** (native WinUI app, x64 and ARM64) | Coming to the Microsoft Store |
 | **Linux** | Planned |
-| **iOS and Android** | Planned, after the desktop apps; development has not started yet |
+| **iOS, iPadOS and Android** | Planned, after the desktop apps; development has not started yet |
 
 ## What KeeDesk does
 
