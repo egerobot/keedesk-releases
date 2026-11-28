@@ -24,7 +24,7 @@
 
 This repository is the **official download channel for KeeDesk on GitHub**. It holds release files only — no source code. Every macOS release carries a Developer ID signed, Apple-notarized disk image and a zip archive of the app, and every release carries a `SHA256SUMS` file. The Windows app is distributed through the Microsoft Store.
 
-<img src="docs/images/welcome-en.jpg" alt="KeeDesk welcome screen: reach your computer or help someone on theirs, end-to-end encrypted" width="100%">
+<img src="docs/images/main-en.jpg" alt="KeeDesk main window: this Mac's 9-digit ID and security code, a one-time invitation code, scheduled sessions and devices on the network (sample data)" width="100%">
 
 ## Download KeeDesk for Mac
 

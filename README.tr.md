@@ -24,7 +24,7 @@
 
 Bu depo **KeeDesk'in GitHub'daki resmî indirme kanalıdır**. Yalnız sürüm dosyaları bulunur, kaynak kod yoktur. Her macOS sürümünde Developer ID ile imzalı, Apple noter onaylı disk görüntüsü ve uygulamanın zip arşivi, her sürümde de `SHA256SUMS` dosyası bulunur. Windows uygulaması Microsoft Store üzerinden dağıtılır.
 
-<img src="docs/images/welcome-tr.jpg" alt="KeeDesk karşılama ekranı: bilgisayarınıza ulaşın ya da uzaktan yardım edin, uçtan uca şifreli" width="100%">
+<img src="docs/images/main-tr.jpg" alt="KeeDesk ana penceresi: bu Mac'in 9 haneli ID'si ve güvenlik kodu, tek kullanımlık davet kodu, planlı oturumlar ve ağdaki cihazlar (örnek veri)" width="100%">
 
 ## Mac için KeeDesk'i indirin
 
